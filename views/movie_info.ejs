@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+
+	<%= movie.Title %>
+	<br>
+	<%= movie.Plot%>
+
+	<form action="/save" method = "POST" >
+	<input type = "hidden" name = "movie[title]" value = <%= "movie.title"  %> >
+	<input type = "hidden" name = "movie[year]" value =
+	<%= "movie.year"  %> >
+	<input type = "hidden" name = "movie[ID]" value =
+	<%= "movie.imdbID"  %> >
+
+		<button> Save</button>
+	</form>
+</body>
+</html>

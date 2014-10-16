@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>My Movies</title>
+</head>
+<body>
+	<%= savedMovies.forEach(function(movie) { %>
+<p> <%= movie.Title %> </p>
+<p> <%= movie.Plot %> </p>
+	<% })} %>
+	<a href="/movie_info/<%= film.imdbID %>" > Back to movie details </a>
+</body>
+</html>
